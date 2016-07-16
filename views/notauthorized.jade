@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Unauthorized attempt to access content
+  p Press button below to go to login page
+  form( action="/", method="get")
+    button(type="submit") Goto Login

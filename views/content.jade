@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to Content
+  p Can only be in this page if authenticated
+  form( action="/logout", method="get")
+    button(type="submit") Logout

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form( action="/postit", method="post")
+    input(type="text", name="username", placeholder="Enter username")
+    br
+    input(type="password", name="password", placeholder="Enter password")
+    br 
+    button(type="submit") submit
+  p(color='red') #{info}
+
